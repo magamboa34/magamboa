@@ -10,6 +10,7 @@ Original file is located at
 import streamlit as st
 import tensorflow as tf
 
+
 @st.cache(allow_output_mutation=True)
 def load_model():
   model=tf.keras.models.load_model('malaria_detector.h5')
@@ -24,7 +25,7 @@ import cv2
 from PIL import Image,ImageOps
 import numpy as np
 def import_and_predict(image_data,model):
-    size=(64,64)
+    size=(130,130)
     image=ImageOps.fit(image_data,size,Image.ANTIALIAS)
     img=np.asarray(image)
     img_reshape=img[np.newaxis,...]

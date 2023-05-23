@@ -16,10 +16,10 @@ def load_model():
   return model
 model=load_model()
 st.write("""
-# Plant Leaf Detection System"""
+# Malaria Detector"""
 )
-file=st.file_uploader("Choose plant photo from computer",type=["jpg","png"])
-A
+file=st.file_uploader("Choose A Laboratory Sample",type=["jpg","png"])
+
 import cv2
 from PIL import Image,ImageOps
 import numpy as np
